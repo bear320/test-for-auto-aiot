@@ -1,0 +1,94 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Noto+Sans+TC:wght@300;400;500;700;800&display=swap');
+
+// Google Fonts Icons
+@font-face {
+  font-family: 'Material Symbols Rounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v90/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOcbTCVpeRL2w5rwZu2rIelXxeJKJBiCa8.woff2)
+    format('woff2');
+}
+
+:root {
+  // Font and Typography
+  --h1-font-size: 36px;
+  --h2-font-size: 28px;
+  --h3-font-size: 24px;
+  --h4-font-size: 20px;
+  --h5-font-size: 18px;
+  --h6-font-size: 16px;
+  --normal-font-size: 14px;
+  --small-font-size: 12px;
+  --h1: 800 var(--h1-font-size) 'Inter', 'Noto Sans TC', sans-serif;
+  --h2: 700 var(--h2-font-size) 'Inter', 'Noto Sans TC', sans-serif;
+  --h3: 700 var(--h3-font-size) 'Inter', 'Noto Sans TC', sans-serif;
+  --h4: 500 var(--h4-font-size) 'Inter', 'Noto Sans TC', sans-serif;
+  --h5: 400 var(--h5-font-size) 'Inter', 'Noto Sans TC', sans-serif;
+  --h6: 400 var(--h6-font-size) 'Inter', 'Noto Sans TC', sans-serif;
+  --text-normal: 400 var(--normal-font-size) 'Inter', 'Noto Sans TC', sans-serif;
+  --text-small: 400 var(--small-font-size) 'Inter', 'Noto Sans TC', sans-serif;
+
+  // RWD
+  @media all and (max-width: 768px) {
+    --h1-font-size: 28px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --h4-font-size: 18px;
+    --h5-font-size: 16px;
+    --h6-font-size: 14px;
+    --normal-font-size: 12px;
+  }
+
+  @media all and (max-width: 480px) {
+    --h1-font-size: 24px;
+    --h2-font-size: 20px;
+    --h3-font-size: 18px;
+    --h4-font-size: 16px;
+    --h5-font-size: 14px;
+    --h6-font-size: 12px;
+  }
+}
+
+body,
+p {
+  font: var(--text-normal);
+}
+
+span {
+  font: var(--text-small);
+}
+
+h1,
+.h1 {
+  font: var(--h1);
+}
+
+h2,
+.h2 {
+  font: var(--h2);
+}
+
+h3,
+.h3 {
+  font: var(--h3);
+}
+
+h4,
+.h4 {
+  font: var(--h4);
+}
+
+h5,
+.h5 {
+  font: var(--h5);
+}
+
+h6,
+.h6 {
+  font: var(--h6);
+}
+
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+}

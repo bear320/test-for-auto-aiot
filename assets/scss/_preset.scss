@@ -1,0 +1,55 @@
+:root {
+  --header-height: 75px;
+  --line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: var(--line-height);
+}
+
+*::selection {
+  color: #fff;
+  background-color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: var(--line-height);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-1);
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  margin: auto;
+  padding: 1rem 1.5rem;
+  width: clamp(360px, 100%, 1280px);
+}

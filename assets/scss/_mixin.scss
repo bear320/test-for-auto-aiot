@@ -1,0 +1,21 @@
+@mixin media($bp) {
+  @media all and (max-width: #{$bp}px) {
+    @content;
+  }
+}
+
+@mixin gradient-text($deg: 90, $start-color: '#000000', $end-color: '#ffffff') {
+  background: linear-gradient(#{$deg}deg, $start-color, $end-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin hover-scale($time: 0.5, $scale: 1.03) {
+  transition: all #{$time}s;
+
+  &:hover {
+    transform: scale($scale);
+    transition: all #{$time}s;
+  }
+}
